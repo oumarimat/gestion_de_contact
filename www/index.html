@@ -1,0 +1,84 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ContactApp</title>
+    <link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/jquery.mobile-1.4.5.min.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <!-- Home Page -->
+    <div id="HomePage" class="bod" data-role="page">
+        <div data-role="header">
+            <h1>Contact App</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <a href="#detailContactPage" data-role="button" data-icon="plus" data-iconpos="right" data-transition="slide">Ajouter</a>
+
+
+            <ul id="contactList" data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Rechercher" class="list">
+                <!-- Contacts statiques -->
+                <li>
+                    <a href="#detailContactPage">
+                        <img src="img/contact.png" alt="Contact" />
+                        <h2>OUMAR IMAT SALEH</h2>
+                        <p>77 111 27 86</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#detailContactPage">
+                        <img src="img/contact.png" alt="Contact" />
+                        <h2>OUSSAMA ADOUM</h2>
+                        <p>77 806 99 11</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>OUMAR IMAT SALEH &copy; 2025</h1>
+        </div>
+    </div>
+
+    <!-- Detail Contact Page -->
+    <div id="detailContactPage" data-role="page">
+        <div data-role="header">
+            <a href="#" data-rel="back" data-role="button" data-icon="home" data-iconpos="notext">Retour</a>
+            <h1>Contact Tel</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <div data-role="header">
+                <a href="#" data-role="button" data-icon="edit" data-iconpos="notext">Modifier</a>
+                <h1>Contact Details</h1>
+                <a href="#" data-role="button" data-icon="delete" data-iconpos="notext">Supprimer</a>
+            </div>
+            <ul data-role="listview" data-inset="true">
+                <li>
+                    <img src="img/customer-service.png" alt="Contact Image" />
+                    <h2>OUMAR IMAT</h2>
+                    <p>Ingénieur</p> 
+                </li>
+                <li>
+                    <h2>Téléphone</h2>
+                    <p>70 12 46 67</p>
+                </li>
+                <li>
+                    <h2>Email</h2>
+                    <p>oumarimat00@gmail.com</p>
+                </li>
+                <li>
+                    <h2>Organisation</h2>
+                    <p>École Supérieure Polytechnique</p>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>M1IABD &copy; 2025</h1>
+        </div>
+    </div>
+</body>
+</html>
